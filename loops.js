@@ -12,6 +12,11 @@
 // ==========================================
 
 
+for (let i = 1; i <= 5; i++) {
+    const char = '*';
+    console.log(char.repeat(i));
+}
+
 
 
 
@@ -25,7 +30,11 @@
 // klaar!
 // ==========================================
 
-
+for (let i = 0; i < 5; i++) {
+    let stringToShow = 'loop...';
+    if (i === 4) stringToShow = 'klaar!';
+    console.log(stringToShow);
+}
 
 
 
@@ -45,7 +54,15 @@
 // >> 9
 // ==========================================
 
+let suffix = '';
+for (let i = 0; i <= 9; i++) {
 
+    if (i === 3 || i === 6) {
+        suffix = '>' + suffix;
+    }
+
+    console.log(suffix + i);
+}
 
 
 
@@ -87,5 +104,18 @@
 // etc.
 // ==========================================
 
+
+for (let i = 1; i <= 100; i++) {
+    let stringToLog = i;
+    if (i % 3 === 0 ) {
+        stringToLog = 'Fizz';
+        if (i % 5 === 0) {
+            stringToLog = 'FizzBuzz';
+        }
+    } else if (i % 5 === 0) {
+        stringToLog = 'Buzz';
+    }
+    console.log(stringToLog);
+}
 
 
